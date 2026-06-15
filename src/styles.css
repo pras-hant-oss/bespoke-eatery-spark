@@ -168,3 +168,5 @@
   .reveal { animation: rise 0.8s ease-out both; }
   @keyframes rise { from { opacity: 0; transform: translateY(24px); } }
 }
+
+#lovable-badge { display: none !important; }
