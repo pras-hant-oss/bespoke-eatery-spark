@@ -15,6 +15,7 @@ import photo9 from "../assets/restaurant-9.jpg.asset.json";
 
 const mapUrl = "https://maps.google.com/?cid=17582143241383883018";
 const phoneUrl = "tel:+9779841451986";
+const whatsappUrl = "https://wa.me/9779841451986?text=Hi%2C%20I%27d%20like%20to%20reserve%20a%20table%20at%20Tibetan%20and%20Nepali%20Kitchen.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
