@@ -12,6 +12,9 @@ import photo6 from "../assets/restaurant-6.jpg.asset.json";
 import photo7 from "../assets/restaurant-7.jpg.asset.json";
 import photo8 from "../assets/restaurant-8.jpg.asset.json";
 import photo9 from "../assets/restaurant-9.jpg.asset.json";
+import thakaliPhoto from "../assets/thakali.jpg.asset.json";
+import milkTeaPhoto from "../assets/milktea.jpg.asset.json";
+import lassiPhoto from "../assets/lassi.jpg.asset.json";
 
 const mapUrl = "https://maps.google.com/?cid=17582143241383883018";
 const phoneUrl = "tel:+9779841451986";
@@ -59,16 +62,15 @@ const menuSections: MenuSection[] = [
     dishes: [
       { name: "Mutton Thali", description: "Goat curry, lentils, rice, vegetables, pickle and greens", price: "NPR 550", image: photo7.url },
       { name: "Chicken Thukpa", description: "Nourishing Tibetan noodle soup with vegetables", price: "NPR 380", image: photo4.url },
-      { name: "Veg Thakali Set", description: "Traditional dal bhat with seasonal accompaniments", price: "NPR 350", image: photo7.url },
+      { name: "Veg Thakali Set", description: "Traditional dal bhat with seasonal accompaniments", price: "NPR 350", image: thakaliPhoto.url },
     ],
   },
   {
     title: "Sweet & warming",
     image: photo2.url,
     dishes: [
-      { name: "Himalayan Milk Tea", description: "Fragrant spiced tea, simmered with milk", price: "NPR 80", image: photo2.url },
-      { name: "Lassi", description: "Cool, creamy and freshly blended", price: "NPR 150", image: photo7.url },
-      { name: "Seasonal Sweet", description: "Ask our team for today's Nepali dessert", price: "NPR 200", image: photo9.url },
+      { name: "Himalayan Milk Tea", description: "Fragrant spiced tea, simmered with milk", price: "NPR 80", image: milkTeaPhoto.url },
+      { name: "Lassi", description: "Cool, creamy and freshly blended", price: "NPR 150", image: lassiPhoto.url },
     ],
   },
 ];
