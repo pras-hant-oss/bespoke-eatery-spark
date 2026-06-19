@@ -54,7 +54,7 @@ const menuSections: MenuSection[] = [
     dishes: [
       { name: "Buff Momo", description: "Hand-folded dumplings with tomato-sesame achar", price: "NPR 280", image: photo6.url },
       { name: "Chicken Momo", description: "Juicy chicken, Himalayan spices and fiery chilli paste", price: "NPR 320", image: photo8.url },
-      { name: "Vegetable Momo", description: "Seasonal vegetables, herbs and warming spices", price: "NPR 220", image: photo8.url },
+      { name: "", description: "", price: "", image: "", blank: true },
     ],
   },
   {
