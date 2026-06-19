@@ -79,8 +79,8 @@ const menuSections: MenuSection[] = [
 const menuGallery = [
   { image: photo6.url, name: "Hand-folded Momos" },
   { image: photo4.url, name: "Chicken Thukpa" },
-  { image: photo7.url, name: "Himalayan Favourites" },
-  { image: photo8.url, name: "Steamed Dumplings & Broth" },
+  { image: "", name: "", blank: true },
+  { image: photo8.url, name: "Steam Momo" },
   { image: photo9.url, name: "House Chow Mein" },
 ];
 
