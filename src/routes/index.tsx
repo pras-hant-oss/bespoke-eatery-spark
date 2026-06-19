@@ -62,7 +62,7 @@ const menuSections: MenuSection[] = [
     image: photo1.url,
     dishes: [
       { name: "Mutton Thali", description: "Goat curry, lentils, rice, vegetables, pickle and greens", price: "NPR 550", image: photo7.url },
-      { name: "Chicken Thukpa", description: "Nourishing Tibetan noodle soup with vegetables", price: "NPR 380", image: photo4.url },
+      { name: "Chicken Thukpa", description: "Nourishing Tibetan noodle soup with vegetables", price: "NPR 250", image: photo4.url },
       { name: "Veg Thakali Set", description: "Traditional dal bhat with seasonal accompaniments", price: "NPR 350", image: thakaliPhoto.url },
     ],
   },
