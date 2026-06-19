@@ -38,6 +38,7 @@ interface Dish {
   description: string;
   price: string;
   image: string;
+  blank?: boolean;
 }
 
 interface MenuSection {
