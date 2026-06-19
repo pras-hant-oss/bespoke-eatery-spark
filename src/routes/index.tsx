@@ -70,7 +70,7 @@ const menuSections: MenuSection[] = [
     title: "Sweet & warming",
     image: photo2.url,
     dishes: [
-      { name: "Himalayan Milk Tea", description: "Fragrant spiced tea, simmered with milk", price: "NPR 80", image: milkTeaPhoto.url },
+      { name: "Milk Tea", description: "Fragrant spiced tea, simmered with milk", price: "NPR 80", image: milkTeaPhoto.url },
       { name: "Lassi", description: "Cool, creamy and freshly blended", price: "NPR 150", image: lassiPhoto.url },
     ],
   },
