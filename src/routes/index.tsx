@@ -12,7 +12,7 @@ import photo6 from "../assets/restaurant-6.jpg.asset.json";
 import photo7 from "../assets/restaurant-7.jpg.asset.json";
 import photo8 from "../assets/restaurant-8.jpg.asset.json";
 import photo9 from "../assets/restaurant-9.jpg.asset.json";
-const photo10 ={ url:"https://i.imgur.com/STfxbFh.png" };
+import photo10 from "../assets/restaurant-10.jpg.asset.json";
 import milkTeaPhoto from "../assets/milktea.jpg.asset.json";
 import lassiPhoto from "../assets/lassi.jpg.asset.json";
 
