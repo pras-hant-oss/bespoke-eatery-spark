@@ -11,8 +11,8 @@ import photo5 from "../assets/restaurant-5.jpg.asset.json";
 import photo6 from "../assets/restaurant-6.jpg.asset.json";
 import photo7 from "../assets/restaurant-7.jpg.asset.json";
 import photo8 from "../assets/restaurant-8.jpg.asset.json";
-import photo9 from "../assets/restaurant-9.jpg.asset.json";
-import photo10 from "../assets/restaurant-10.jpg.asset.json";
+import photo9 from "../assets/restaurant-9.jpg.asset.jsoon";
+const  photo10 = { url:"https://i.imgur.com/STfxbFh.png" };
 import milkTeaPhoto from "../assets/milktea.jpg.asset.json";
 import lassiPhoto from "../assets/lassi.jpg.asset.json";
 
