@@ -146,9 +146,16 @@
     margin: 0;
   }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
 
-  h1, h2, h3, h4 { font-family: var(--font-display); }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+  }
 
   ::selection {
     background: var(--color-primary);
@@ -157,7 +164,12 @@
 }
 
 @utility hero-shade {
-  background: linear-gradient(90deg, oklch(0.12 0.025 30 / 92%) 0%, oklch(0.12 0.025 30 / 58%) 52%, transparent 100%);
+  background: linear-gradient(
+    90deg,
+    oklch(0.12 0.025 30 / 92%) 0%,
+    oklch(0.12 0.025 30 / 58%) 52%,
+    transparent 100%
+  );
 }
 
 @utility image-shade {
@@ -165,8 +177,17 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .reveal { animation: rise 0.8s ease-out both; }
-  @keyframes rise { from { opacity: 0; transform: translateY(24px); } }
+  .reveal {
+    animation: rise 0.8s ease-out both;
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+  }
 }
 
-#lovable-badge { display: none !important; }
+#lovable-badge {
+  display: none !important;
+}

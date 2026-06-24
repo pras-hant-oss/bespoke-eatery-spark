@@ -5,9 +5,16 @@ export const Route = createFileRoute("/menu")({
   head: () => ({
     meta: [
       { title: "Menu — Tibetan and Nepali Kitchen" },
-      { name: "description", content: "Full menu: breakfast, thali, momos, thukpa, beverages, and bar at Tibetan and Nepali Kitchen, Kathmandu." },
+      {
+        name: "description",
+        content:
+          "Full menu: breakfast, thali, momos, thukpa, beverages, and bar at Tibetan and Nepali Kitchen, Kathmandu.",
+      },
       { property: "og:title", content: "Menu — Tibetan and Nepali Kitchen" },
-      { property: "og:description", content: "Explore our full menu of Himalayan classics, snacks, beverages, and bar." },
+      {
+        property: "og:description",
+        content: "Explore our full menu of Himalayan classics, snacks, beverages, and bar.",
+      },
     ],
   }),
   component: MenuPage,
@@ -33,7 +40,8 @@ const tabs: Tab[] = [
         items: [
           {
             name: "Simple Breakfast Set",
-            description: "2 pcs toast with butter or jam, tea or coffee, eggs any style, hash brown potato",
+            description:
+              "2 pcs toast with butter or jam, tea or coffee, eggs any style, hash brown potato",
             price: "NPR 450",
           },
         ],
@@ -56,7 +64,11 @@ const tabs: Tab[] = [
           { name: "Plain Omelet", price: "NPR 150" },
           { name: "Fried Eggs", price: "NPR 150" },
           { name: "Scrambled Eggs", price: "NPR 180" },
-          { name: "Masala Omelet", description: "Onion, tomato, garlic, coriander, green chilli", price: "NPR 200" },
+          {
+            name: "Masala Omelet",
+            description: "Onion, tomato, garlic, coriander, green chilli",
+            price: "NPR 200",
+          },
         ],
       },
       {
@@ -88,14 +100,47 @@ const tabs: Tab[] = [
       {
         title: "Nepali Thali Set",
         items: [
-          { name: "Vegetarian Thali", description: "Plain rice, fried dal, veg curry, achar, papad, curd, salad", price: "NPR 380" },
-          { name: "Mutton Thali", description: "Plain rice, fried dal, veg curry, mutton curry, achar, papad, salad", price: "NPR 550" },
-          { name: "Chicken Thali", description: "Plain rice, fried dal, veg curry, chicken curry, achar, papad, salad", price: "NPR 500" },
-          { name: "Pork Thali", description: "Plain rice, fried dal, veg curry, pork curry, achar, papad, salad", price: "NPR 550" },
-          { name: "Khutti (Achar) Thali", description: "Plain rice, fried dal, veg curry, achar, papad, spicy curd", price: "NPR 550" },
-          { name: "Fish Thali", description: "Plain rice, fried dal, veg curry, fish curry, achar, papad, salad", price: "NPR 550" },
-          { name: "Veg Dhido", description: "Dhido, fried dal, veg curry, achar, papad, salad, curd", price: "NPR 400" },
-          { name: "Non-Veg Dhido", description: "Dhido, fried dal, veg curry, choice of pork, chicken or mutton curry, achar, papad, salad", price: "NPR 600" },
+          {
+            name: "Vegetarian Thali",
+            description: "Plain rice, fried dal, veg curry, achar, papad, curd, salad",
+            price: "NPR 380",
+          },
+          {
+            name: "Mutton Thali",
+            description: "Plain rice, fried dal, veg curry, mutton curry, achar, papad, salad",
+            price: "NPR 550",
+          },
+          {
+            name: "Chicken Thali",
+            description: "Plain rice, fried dal, veg curry, chicken curry, achar, papad, salad",
+            price: "NPR 500",
+          },
+          {
+            name: "Pork Thali",
+            description: "Plain rice, fried dal, veg curry, pork curry, achar, papad, salad",
+            price: "NPR 550",
+          },
+          {
+            name: "Khutti (Achar) Thali",
+            description: "Plain rice, fried dal, veg curry, achar, papad, spicy curd",
+            price: "NPR 550",
+          },
+          {
+            name: "Fish Thali",
+            description: "Plain rice, fried dal, veg curry, fish curry, achar, papad, salad",
+            price: "NPR 550",
+          },
+          {
+            name: "Veg Dhido",
+            description: "Dhido, fried dal, veg curry, achar, papad, salad, curd",
+            price: "NPR 400",
+          },
+          {
+            name: "Non-Veg Dhido",
+            description:
+              "Dhido, fried dal, veg curry, choice of pork, chicken or mutton curry, achar, papad, salad",
+            price: "NPR 600",
+          },
         ],
       },
       {
@@ -291,23 +336,141 @@ const tabs: Tab[] = [
       {
         title: "Hot Beverages",
         items: [
-          { name: "Milk Tea", variants: [{ label: "Cup", price: "NPR 80" }, { label: "Small Pot", price: "NPR 150" }, { label: "Big Pot", price: "NPR 280" }] },
-          { name: "Black Tea", variants: [{ label: "Cup", price: "NPR 65" }, { label: "Small Pot", price: "NPR 120" }, { label: "Big Pot", price: "NPR 220" }] },
-          { name: "Masala Tea", variants: [{ label: "Cup", price: "NPR 100" }, { label: "Small Pot", price: "NPR 180" }, { label: "Big Pot", price: "NPR 320" }] },
-          { name: "Milk Coffee", variants: [{ label: "Cup", price: "NPR 170" }, { label: "Small Pot", price: "NPR 320" }, { label: "Big Pot", price: "NPR 550" }] },
-          { name: "Americano", variants: [{ label: "Cup", price: "NPR 150" }, { label: "Small Pot", price: "NPR 280" }, { label: "Big Pot", price: "NPR 550" }] },
-          { name: "Lemon Tea", variants: [{ label: "Cup", price: "NPR 85" }, { label: "Small Pot", price: "NPR 160" }, { label: "Big Pot", price: "NPR 300" }] },
-          { name: "Hot Lemon", variants: [{ label: "Cup", price: "NPR 85" }, { label: "Small Pot", price: "NPR 160" }, { label: "Big Pot", price: "NPR 300" }] },
-          { name: "Ginger Lemon Tea", variants: [{ label: "Cup", price: "NPR 130" }, { label: "Small Pot", price: "NPR 250" }, { label: "Big Pot", price: "NPR 480" }] },
-          { name: "Ginger Lemon Honey Tea", variants: [{ label: "Cup", price: "NPR 160" }, { label: "Small Pot", price: "NPR 300" }, { label: "Big Pot", price: "NPR 550" }] },
-          { name: "Jasmine Tea", variants: [{ label: "Cup", price: "NPR 85" }, { label: "Small Pot", price: "NPR 150" }, { label: "Big Pot", price: "NPR 300" }] },
-          { name: "Mint Tea", variants: [{ label: "Cup", price: "NPR 85" }, { label: "Small Pot", price: "NPR 160" }, { label: "Big Pot", price: "NPR 300" }] },
-          { name: "Butter (Tibetan) Tea", variants: [{ label: "Cup", price: "NPR 150" }, { label: "Small Pot", price: "NPR 280" }, { label: "Big Pot", price: "NPR 520" }] },
-          { name: "Hot Chocolate", variants: [{ label: "Cup", price: "NPR 200" }, { label: "Small Pot", price: "NPR 380" }, { label: "Big Pot", price: "NPR 750" }] },
-          { name: "Latte", variants: [{ label: "Cup", price: "NPR 190" }, { label: "Small Pot", price: "NPR 370" }, { label: "Big Pot", price: "NPR 720" }] },
-          { name: "Cappuccino", variants: [{ label: "Cup", price: "NPR 190" }, { label: "Small Pot", price: "NPR 370" }, { label: "Big Pot", price: "NPR 720" }] },
-          { name: "Mochachino", variants: [{ label: "Cup", price: "NPR 200" }, { label: "Small Pot", price: "NPR 380" }, { label: "Big Pot", price: "NPR 740" }] },
-          { name: "Espresso Coffee", variants: [{ label: "Single", price: "NPR 135" }, { label: "Double", price: "NPR 250" }] },
+          {
+            name: "Milk Tea",
+            variants: [
+              { label: "Cup", price: "NPR 80" },
+              { label: "Small Pot", price: "NPR 150" },
+              { label: "Big Pot", price: "NPR 280" },
+            ],
+          },
+          {
+            name: "Black Tea",
+            variants: [
+              { label: "Cup", price: "NPR 65" },
+              { label: "Small Pot", price: "NPR 120" },
+              { label: "Big Pot", price: "NPR 220" },
+            ],
+          },
+          {
+            name: "Masala Tea",
+            variants: [
+              { label: "Cup", price: "NPR 100" },
+              { label: "Small Pot", price: "NPR 180" },
+              { label: "Big Pot", price: "NPR 320" },
+            ],
+          },
+          {
+            name: "Milk Coffee",
+            variants: [
+              { label: "Cup", price: "NPR 170" },
+              { label: "Small Pot", price: "NPR 320" },
+              { label: "Big Pot", price: "NPR 550" },
+            ],
+          },
+          {
+            name: "Americano",
+            variants: [
+              { label: "Cup", price: "NPR 150" },
+              { label: "Small Pot", price: "NPR 280" },
+              { label: "Big Pot", price: "NPR 550" },
+            ],
+          },
+          {
+            name: "Lemon Tea",
+            variants: [
+              { label: "Cup", price: "NPR 85" },
+              { label: "Small Pot", price: "NPR 160" },
+              { label: "Big Pot", price: "NPR 300" },
+            ],
+          },
+          {
+            name: "Hot Lemon",
+            variants: [
+              { label: "Cup", price: "NPR 85" },
+              { label: "Small Pot", price: "NPR 160" },
+              { label: "Big Pot", price: "NPR 300" },
+            ],
+          },
+          {
+            name: "Ginger Lemon Tea",
+            variants: [
+              { label: "Cup", price: "NPR 130" },
+              { label: "Small Pot", price: "NPR 250" },
+              { label: "Big Pot", price: "NPR 480" },
+            ],
+          },
+          {
+            name: "Ginger Lemon Honey Tea",
+            variants: [
+              { label: "Cup", price: "NPR 160" },
+              { label: "Small Pot", price: "NPR 300" },
+              { label: "Big Pot", price: "NPR 550" },
+            ],
+          },
+          {
+            name: "Jasmine Tea",
+            variants: [
+              { label: "Cup", price: "NPR 85" },
+              { label: "Small Pot", price: "NPR 150" },
+              { label: "Big Pot", price: "NPR 300" },
+            ],
+          },
+          {
+            name: "Mint Tea",
+            variants: [
+              { label: "Cup", price: "NPR 85" },
+              { label: "Small Pot", price: "NPR 160" },
+              { label: "Big Pot", price: "NPR 300" },
+            ],
+          },
+          {
+            name: "Butter (Tibetan) Tea",
+            variants: [
+              { label: "Cup", price: "NPR 150" },
+              { label: "Small Pot", price: "NPR 280" },
+              { label: "Big Pot", price: "NPR 520" },
+            ],
+          },
+          {
+            name: "Hot Chocolate",
+            variants: [
+              { label: "Cup", price: "NPR 200" },
+              { label: "Small Pot", price: "NPR 380" },
+              { label: "Big Pot", price: "NPR 750" },
+            ],
+          },
+          {
+            name: "Latte",
+            variants: [
+              { label: "Cup", price: "NPR 190" },
+              { label: "Small Pot", price: "NPR 370" },
+              { label: "Big Pot", price: "NPR 720" },
+            ],
+          },
+          {
+            name: "Cappuccino",
+            variants: [
+              { label: "Cup", price: "NPR 190" },
+              { label: "Small Pot", price: "NPR 370" },
+              { label: "Big Pot", price: "NPR 720" },
+            ],
+          },
+          {
+            name: "Mochachino",
+            variants: [
+              { label: "Cup", price: "NPR 200" },
+              { label: "Small Pot", price: "NPR 380" },
+              { label: "Big Pot", price: "NPR 740" },
+            ],
+          },
+          {
+            name: "Espresso Coffee",
+            variants: [
+              { label: "Single", price: "NPR 135" },
+              { label: "Double", price: "NPR 250" },
+            ],
+          },
         ],
       },
       {
@@ -356,39 +519,193 @@ const tabs: Tab[] = [
       {
         title: "Imported Drinks",
         items: [
-          { name: "Red Label", variants: [{ label: "60ml", price: "NPR 900" }, { label: "Quarter", price: "NPR 2600" }] },
-          { name: "Black Label", variants: [{ label: "60ml", price: "NPR 1000" }, { label: "Quarter", price: "NPR 2850" }] },
-          { name: "Chivas Regal", variants: [{ label: "60ml", price: "NPR 1000" }, { label: "Quarter", price: "NPR 2850" }] },
-          { name: "Vat 69", variants: [{ label: "60ml", price: "NPR 900" }, { label: "Quarter", price: "NPR 2600" }] },
-          { name: "Absolut Vodka", variants: [{ label: "60ml", price: "NPR 900" }, { label: "Quarter", price: "NPR 2600" }] },
-          { name: "Jack Daniels", variants: [{ label: "60ml", price: "NPR 1000" }, { label: "Quarter", price: "NPR 2850" }] },
+          {
+            name: "Red Label",
+            variants: [
+              { label: "60ml", price: "NPR 900" },
+              { label: "Quarter", price: "NPR 2600" },
+            ],
+          },
+          {
+            name: "Black Label",
+            variants: [
+              { label: "60ml", price: "NPR 1000" },
+              { label: "Quarter", price: "NPR 2850" },
+            ],
+          },
+          {
+            name: "Chivas Regal",
+            variants: [
+              { label: "60ml", price: "NPR 1000" },
+              { label: "Quarter", price: "NPR 2850" },
+            ],
+          },
+          {
+            name: "Vat 69",
+            variants: [
+              { label: "60ml", price: "NPR 900" },
+              { label: "Quarter", price: "NPR 2600" },
+            ],
+          },
+          {
+            name: "Absolut Vodka",
+            variants: [
+              { label: "60ml", price: "NPR 900" },
+              { label: "Quarter", price: "NPR 2600" },
+            ],
+          },
+          {
+            name: "Jack Daniels",
+            variants: [
+              { label: "60ml", price: "NPR 1000" },
+              { label: "Quarter", price: "NPR 2850" },
+            ],
+          },
         ],
       },
       {
         title: "Hard Drinks",
         items: [
-          { name: "Signature", variants: [{ label: "60ml", price: "NPR 350" }, { label: "Quarter", price: "NPR 950" }, { label: "Half", price: "NPR 1800" }, { label: "Full", price: "NPR 3400" }] },
-          { name: "Russland Vodka", variants: [{ label: "60ml", price: "NPR 350" }, { label: "Quarter", price: "NPR 950" }, { label: "Half", price: "NPR 1800" }, { label: "Full", price: "NPR 3400" }] },
-          { name: "8848 Vodka", variants: [{ label: "60ml", price: "NPR 400" }, { label: "Quarter", price: "NPR 1100" }, { label: "Half", price: "NPR 2000" }, { label: "Full", price: "NPR 3700" }] },
-          { name: "Khukuri Rum", variants: [{ label: "60ml", price: "NPR 350" }, { label: "Quarter", price: "NPR 950" }, { label: "Half", price: "NPR 1800" }, { label: "Full", price: "NPR 3400" }] },
-          { name: "Blue Riband Gin", variants: [{ label: "60ml", price: "NPR 300" }, { label: "Quarter", price: "NPR 800" }, { label: "Half", price: "NPR 1450" }, { label: "Full", price: "NPR 2800" }] },
-          { name: "Old Durbar", variants: [{ label: "60ml", price: "NPR 400" }, { label: "Quarter", price: "NPR 1100" }, { label: "Half", price: "NPR 2000" }, { label: "Full", price: "NPR 3700" }] },
-          { name: "Old Durbar Chimney", variants: [{ label: "60ml", price: "NPR 500" }, { label: "Quarter", price: "NPR 1400" }, { label: "Half", price: "NPR 2700" }, { label: "Full", price: "NPR 5300" }] },
-          { name: "McDowell's", variants: [{ label: "60ml", price: "NPR 300" }, { label: "Quarter", price: "NPR 800" }, { label: "Half", price: "NPR 1450" }, { label: "Full", price: "NPR 2800" }] },
-          { name: "Smirnoff", variants: [{ label: "60ml", price: "NPR 400" }, { label: "Quarter", price: "NPR 1100" }, { label: "Half", price: "NPR 2000" }, { label: "Full", price: "NPR 3700" }] },
-          { name: "J 89", variants: [{ label: "60ml", price: "NPR 430" }, { label: "Quarter", price: "NPR 1250" }, { label: "Half", price: "NPR 2400" }, { label: "Full", price: "NPR 4600" }] },
-          { name: "Gorkhas Guns", variants: [{ label: "60ml", price: "NPR 430" }, { label: "Quarter", price: "NPR 1250" }, { label: "Half", price: "NPR 2400" }, { label: "Full", price: "NPR 4600" }] },
-          { name: "Wine (Imported)", variants: [{ label: "Glass", price: "NPR 600" }, { label: "Bottle", price: "NPR 2500" }] },
-          { name: "Wine (Local)", variants: [{ label: "Glass", price: "NPR 450" }, { label: "Bottle", price: "NPR 1800" }] },
+          {
+            name: "Signature",
+            variants: [
+              { label: "60ml", price: "NPR 350" },
+              { label: "Quarter", price: "NPR 950" },
+              { label: "Half", price: "NPR 1800" },
+              { label: "Full", price: "NPR 3400" },
+            ],
+          },
+          {
+            name: "Russland Vodka",
+            variants: [
+              { label: "60ml", price: "NPR 350" },
+              { label: "Quarter", price: "NPR 950" },
+              { label: "Half", price: "NPR 1800" },
+              { label: "Full", price: "NPR 3400" },
+            ],
+          },
+          {
+            name: "8848 Vodka",
+            variants: [
+              { label: "60ml", price: "NPR 400" },
+              { label: "Quarter", price: "NPR 1100" },
+              { label: "Half", price: "NPR 2000" },
+              { label: "Full", price: "NPR 3700" },
+            ],
+          },
+          {
+            name: "Khukuri Rum",
+            variants: [
+              { label: "60ml", price: "NPR 350" },
+              { label: "Quarter", price: "NPR 950" },
+              { label: "Half", price: "NPR 1800" },
+              { label: "Full", price: "NPR 3400" },
+            ],
+          },
+          {
+            name: "Blue Riband Gin",
+            variants: [
+              { label: "60ml", price: "NPR 300" },
+              { label: "Quarter", price: "NPR 800" },
+              { label: "Half", price: "NPR 1450" },
+              { label: "Full", price: "NPR 2800" },
+            ],
+          },
+          {
+            name: "Old Durbar",
+            variants: [
+              { label: "60ml", price: "NPR 400" },
+              { label: "Quarter", price: "NPR 1100" },
+              { label: "Half", price: "NPR 2000" },
+              { label: "Full", price: "NPR 3700" },
+            ],
+          },
+          {
+            name: "Old Durbar Chimney",
+            variants: [
+              { label: "60ml", price: "NPR 500" },
+              { label: "Quarter", price: "NPR 1400" },
+              { label: "Half", price: "NPR 2700" },
+              { label: "Full", price: "NPR 5300" },
+            ],
+          },
+          {
+            name: "McDowell's",
+            variants: [
+              { label: "60ml", price: "NPR 300" },
+              { label: "Quarter", price: "NPR 800" },
+              { label: "Half", price: "NPR 1450" },
+              { label: "Full", price: "NPR 2800" },
+            ],
+          },
+          {
+            name: "Smirnoff",
+            variants: [
+              { label: "60ml", price: "NPR 400" },
+              { label: "Quarter", price: "NPR 1100" },
+              { label: "Half", price: "NPR 2000" },
+              { label: "Full", price: "NPR 3700" },
+            ],
+          },
+          {
+            name: "J 89",
+            variants: [
+              { label: "60ml", price: "NPR 430" },
+              { label: "Quarter", price: "NPR 1250" },
+              { label: "Half", price: "NPR 2400" },
+              { label: "Full", price: "NPR 4600" },
+            ],
+          },
+          {
+            name: "Gorkhas Guns",
+            variants: [
+              { label: "60ml", price: "NPR 430" },
+              { label: "Quarter", price: "NPR 1250" },
+              { label: "Half", price: "NPR 2400" },
+              { label: "Full", price: "NPR 4600" },
+            ],
+          },
+          {
+            name: "Wine (Imported)",
+            variants: [
+              { label: "Glass", price: "NPR 600" },
+              { label: "Bottle", price: "NPR 2500" },
+            ],
+          },
+          {
+            name: "Wine (Local)",
+            variants: [
+              { label: "Glass", price: "NPR 450" },
+              { label: "Bottle", price: "NPR 1800" },
+            ],
+          },
         ],
       },
       {
         title: "Beer",
         items: [
-          { name: "Tuborg", variants: [{ label: "650ml", price: "NPR 600" }, { label: "350ml", price: "NPR 350" }] },
-          { name: "Gorkha Beer", variants: [{ label: "650ml", price: "NPR 600" }, { label: "350ml", price: "NPR 350" }] },
+          {
+            name: "Tuborg",
+            variants: [
+              { label: "650ml", price: "NPR 600" },
+              { label: "350ml", price: "NPR 350" },
+            ],
+          },
+          {
+            name: "Gorkha Beer",
+            variants: [
+              { label: "650ml", price: "NPR 600" },
+              { label: "350ml", price: "NPR 350" },
+            ],
+          },
           { name: "Arna Beer", variants: [{ label: "350ml", price: "NPR 350" }] },
-          { name: "Barahsinghe Beer", variants: [{ label: "650ml", price: "NPR 600" }, { label: "350ml", price: "NPR 350" }] },
+          {
+            name: "Barahsinghe Beer",
+            variants: [
+              { label: "650ml", price: "NPR 600" },
+              { label: "350ml", price: "NPR 350" },
+            ],
+          },
           { name: "Carlsberg", variants: [{ label: "650ml", price: "NPR 650" }] },
           { name: "Nepal Ice", variants: [{ label: "650ml", price: "NPR 600" }] },
           { name: "Everest", variants: [{ label: "650ml", price: "NPR 600" }] },
@@ -418,7 +735,10 @@ function MenuPage() {
           <Link to="/" className="font-display text-2xl sm:text-3xl tracking-tight">
             Tibetan &amp; Nepali Kitchen
           </Link>
-          <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link
+            to="/"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
             ← Back to home
           </Link>
         </div>
@@ -430,7 +750,8 @@ function MenuPage() {
           Honest Himalayan flavours
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-          From breakfast to bar — every dish made fresh in our Kathmandu kitchen. Prices in Nepalese Rupees (NPR).
+          From breakfast to bar — every dish made fresh in our Kathmandu kitchen. Prices in Nepalese
+          Rupees (NPR).
         </p>
       </section>
 
@@ -493,7 +814,9 @@ function MenuPage() {
                         {item.variants.map((v) => (
                           <div key={v.label} className="text-sm">
                             <span className="text-muted-foreground">{v.label}</span>{" "}
-                            <span className="font-display text-primary tabular-nums">{v.price}</span>
+                            <span className="font-display text-primary tabular-nums">
+                              {v.price}
+                            </span>
                           </div>
                         ))}
                       </div>

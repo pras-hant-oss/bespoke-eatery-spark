@@ -8,7 +8,8 @@ type ButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 export function Button({ children, variant = "primary", className = "", ...props }: ButtonProps) {
   const variants = {
     primary: "bg-primary text-primary-foreground hover:bg-primary/90",
-    outline: "border border-primary/40 text-foreground hover:bg-primary hover:text-primary-foreground",
+    outline:
+      "border border-primary/40 text-foreground hover:bg-primary hover:text-primary-foreground",
   };
 
   return (
