@@ -15,7 +15,7 @@ import photo9 from "../assets/restaurant-9.jpg.asset.json";
 import milkTeaPhoto from "../assets/milktea.jpg.asset.json";
 import lassiPhoto from "../assets/lassi.jpg.asset.json";
 import thakaliPhoto from "../assets/thakali.jpg.asset.json";
-const photo10 = { url: "https://i.imgur.com/STfxbFh.png" };
+const photo10 = { url: "/images/image.png" };
 
 const mapUrl = "https://maps.google.com/?cid=17582143241383883018";
 const phoneUrl = "tel:+9779841451986";
