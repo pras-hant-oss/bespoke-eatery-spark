@@ -12,7 +12,7 @@ import photo6 from "../assets/restaurant-6.jpg.asset.json";
 import photo7 from "../assets/restaurant-7.jpg.asset.json";
 import photo8 from "../assets/restaurant-8.jpg.asset.json";
 import photo9 from "../assets/restaurant-9.jpg.asset.json";
-import thakaliPhoto from "../assets/thakali.jpg.asset.json";
+const photo10 ={ url:"https://i.imgur.com/STfxbFh.png" };
 import milkTeaPhoto from "../assets/milktea.jpg.asset.json";
 import lassiPhoto from "../assets/lassi.jpg.asset.json";
 
@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Authentic Tibetan and Nepali food in Kathmandu. Momos, thukpa and thali, open daily 9 AM–11 PM." },
       { property: "og:title", content: "Tibetan and Nepali Kitchen, Kathmandu" },
       { property: "og:description", content: "Honest Himalayan flavours, handmade with heart in Kathmandu." },
-      { property: "og:image", content: photo0.url },
+      { property: "og:image", content: photo10.url },
     ],
   }),
   component: Index,
